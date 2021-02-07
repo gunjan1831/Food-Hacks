@@ -10,6 +10,8 @@
             <h1>{{ item.item_name }}</h1>
             <h6>{{ item.item_desc}}</h6>
             <h2>{{ item.item_calories}}</h2>
+
+            <a href="{% url 'delete_item' item.id %}" class="btn btn-success">Delete</a>
         </div>
     </div>
 </div>
