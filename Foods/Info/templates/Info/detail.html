@@ -1,10 +1,16 @@
 {% extends 'Info/base.html '%}
 {% block body %}
 
-<h1> {{ item.item_name }}</h1>
-
-<h2>{{  item.item_desc }}</h2>
-
-{{  item.item_calories }}
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 offset-2">
+            <img height="250px" src="{{ item.item_image }}" class="card"/>
+        </div>
+        <div class="col-md-3">
+            <h1>{{ item.item_name }}</h1>
+            <h6>{{ item.item_desc}}</h6>
+            <h2>{{ item.item_calories}}</h2>
+        </div>
+    </div>
+</div>
 {% endblock %}
