@@ -1,8 +1,22 @@
+{% extends 'Info/base.html' %}
+<html>
+<head>
+</head>
+
+
+</html>
+
+<body>
+
+
+{% block body %}
 {%for item in item_list%}
 <ul>
    <li>
-      <a href="{% url 'info:detail' item.id %}"> {{ item.id }}  {{ item.item_name }}</a>
+      <a href="{% url 'detail' item.id %}"> {{ item.id }}  {{ item.item_name }}</a>
    </li>
 </ul>
 
 {% endfor %}
+{% endblock %}
+</body>

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from Info import views
 
-app_name= 'info'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('food/',views.index,name='index'),
